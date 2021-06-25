@@ -41,6 +41,19 @@ body {
     box-sizing: border-box;
 }
 
+main {
+    min-height: 100vh;
+    display: flex;
+
+    flex: {
+        direction: column;
+        wrap: nowrap;
+    }
+
+    justify-content: center;
+    align-items: center;
+}
+
 .intro {
     text-align: center;
     max-width: 545px;
@@ -76,6 +89,10 @@ body {
 }
 
 @media (max-width: 840px) {
+    .intro h1 {
+        font-size: 1.5em;
+    }
+    
     .tools {
         display: block;
         max-width: 545px;

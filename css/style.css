@@ -2,6 +2,67 @@
 body {
   font-size: 93.75%;
   font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+*, * * {
+  box-sizing: border-box;
+}
+
+.intro {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  padding: 2em 0 0 0;
+}
+.intro span {
+  display: block;
+  font-weight: 200;
+}
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: ". two ." "one two four" "one three four" ". three .";
+  gap: 2em;
+  padding: 2em;
+}
+
+.four, .three, .two, .one {
+  padding: 2em;
+  background-color: white;
+  box-shadow: 0px 1px 12px 1px rgba(163, 165, 174, 0.3);
+}
+
+.one {
+  grid-area: one;
+  border-top: 4px solid #45d3d3;
+  border-radius: 4px;
+}
+
+.two {
+  grid-area: two;
+  border-top: 4px solid #ea5353;
+  border-radius: 4px;
+}
+
+.three {
+  grid-area: three;
+  border-top: 4px solid #fcaf4a;
+  border-radius: 4px;
+}
+
+.four {
+  grid-area: four;
+  border-top: 4px solid #549ef2;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
 }
 
 /*# sourceMappingURL=style.css.map */

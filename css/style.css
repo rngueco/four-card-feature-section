@@ -38,6 +38,17 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 840px) {
+  .tools {
+    display: block;
+    max-width: 545px;
+    margin: 0 auto;
+    padding: 2em;
+  }
+  .tools > div:not(:last-child) {
+    margin-bottom: 1em;
+  }
+}
 .four, .three, .two, .one {
   padding: 2em 2em calc(64px + 1.5em) 2em;
   background-color: white;
